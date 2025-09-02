@@ -9,9 +9,9 @@ lint:
 	flake8 hello.py
 
 test:
-	python -m pytest -vv --cov=hello test_hello.py
+	python -m pytest -vv --cov=hello test_hello.py	
 
 clean:
-    rm -rf __pycache__ .pytest_cache .coverage
-
+	rm -rf __pycache__ .pytest_cache .coverage
+	
 all: install format lint test
